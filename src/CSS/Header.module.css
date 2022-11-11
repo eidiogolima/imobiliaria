@@ -1,0 +1,210 @@
+#headerBg {
+  background: var(--cor-p1);
+
+
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--cor-2);
+  height: 70px;
+  
+
+  
+}
+
+#accontDisable a, 
+#accontDisable img{
+  display: block;
+  position: relative;
+}
+
+#nav ul {
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+#accont {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+
+}
+
+#contaMobile{
+  display: none;
+}
+#menuMobile{
+  display: none;
+}
+
+#accontDisable a, 
+#accontDisable img{
+  display: none;
+}
+
+#accontDisableMobile{
+  display: none;
+}
+
+#menuText{
+  display: none;
+  pointer-events: none;
+
+  color: var(--cor-11);
+}
+
+
+@media(max-width: 900px){
+
+  
+  #header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .active ~ #contaMobile{
+    display: block;
+  }
+  #header > .menuMobile{
+    display: none;
+  } 
+
+  .active ~ #accontDisable{
+    display: block;
+  }
+
+
+  .active ~ #accontDisableMobile{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    
+
+  }
+
+  #accontDisableMobile::after{
+    display: flex;
+    content: '';
+    width: 2px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 40px;
+
+    background: var(--cor-2);
+    position: absolute;
+    margin: 0 auto;
+    transform: rotate(10deg);
+
+  }
+
+  #header > ul img {
+    display: block;
+
+  }
+
+  #logoHeader{
+    overflow: hidden;
+  }
+
+  .active ~ #logoHeader{
+    display: none;
+  }
+
+  .active ~ #contaMobile{
+    display: block;
+  }
+
+ 
+  #accont{
+    display: none;
+  }
+
+  #nav{
+    
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    top: 70px;
+    color: #000;
+    width: 100vw;
+    background: var(--cor-2);
+    left: 0;
+    opacity: 0;
+    transition: .3s;
+    height: calc(100vh - 90px);
+    pointer-events: none;
+    border-bottom: 20px solid var(--cor-9);
+  }
+  .active ~ #nav {
+    
+    pointer-events: initial;
+
+    opacity: 1;
+    overflow: visible;
+  }
+  #nav ul {
+    padding: 0 !important;
+    position: relative;
+    display: block;
+    background: var(--cor-2);
+    width: 100%;
+
+  }
+  #nav ul a{
+    display: block;
+    padding: 16px;
+    color: var(--cor-8);
+  
+    
+  }
+
+  /* Menu Mobile */
+  
+
+  #menuMobile{
+    
+  
+    display: block;
+    color: var(--cor-1);
+    border-top: 2px solid;
+    background: none;
+    border: 0;
+    border-top: 2px solid #fff;
+    position: relative;
+  }
+
+  #menuMobile::after, #menuMobile::before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    
+  }
+
+  #menuMobile.active{
+    border-top-color:transparent;
+  }
+
+  #menuMobile.active::after{
+    transform: rotate(135deg);
+  }
+  #menuMobile.active::before{
+    transform: rotate(135deg);
+    top: -7px;
+  }
+
+
+ 
+
+}

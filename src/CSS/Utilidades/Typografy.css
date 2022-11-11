@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+/* #### Tipografy #### */
+
+
+.font-1-xl{
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: Poppins;
+  line-height: 1;
+
+}
+
+.font-1-s{
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: Poppins;
+  line-height: 1;
+
+}
+.font-2-l{
+  line-height: 1.2;
+  font-size: 2.6rem;
+  font-weight: 400;
+  font-family: Roboto;
+}
+.font-2-s-l{
+  font-size: 2rem;
+  font-family: Roboto;
+  font-weight: 400;
+
+
+
+}
+.font-2-s {
+  font-size: 1.125rem;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.font-2-xs {
+  font-size: 1rem;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+@media(max-width: 600px){
+  .font-1-xl{
+    font-size: 2.8rem;
+    
+  
+  }
+}
+
+@media(max-width:500px){
+
+  /* Poppins */
+  .font-1-xxl{
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-family: Poppins;
+    line-height: .9;
+  
+  }
+  .font-1-xl{
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: Poppins;
+    line-height: 1;
+  
+  }
+
+  /* Roboto */
+
+  .font-2-l{
+    line-height: 1.2;
+    font-size: 1.9rem;
+    font-weight: 400;
+    font-family: Roboto;
+  
+  
+  }
+  .font-2-s-l{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Roboto;
+  }
+  .font-2-s {
+    font-size: 1.225rem;
+    font-family: Roboto;
+    font-weight: 400;
+  }
+}
+
+@media(max-width:450px) {
+  .font-1-xl{
+    font-size: 2.5rem;
+    font-family: Poppins;
+  
+  }
+}
+@media(max-width:350px){
+  /* Poppins */
+  .font-1-xxl{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: Poppins;
+    line-height: .9;
+  
+  }
+  .font-1-xl{
+    font-size: 2.225rem;
+    font-family: Poppins;
+  
+  }
+
+  /* Roboto */
+
+  .font-2-l{
+    line-height: 1.2;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Roboto;
+  
+  
+  }
+  .font-2-s-l{
+    font-size: 1.3rem;
+  } 
+  .font-2-s {
+    font-size: 1.225rem;
+    font-family: Roboto;
+    font-weight: 400;
+  }
+}
+
