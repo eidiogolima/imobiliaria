@@ -25,6 +25,45 @@
   gap: 10px;
   align-items: center;
 }
+#nav ul a{
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+#nav ul a::after{
+  content: '';
+  text-align: center;
+  visibility: hidden;
+  display: block;
+  width: 1%;
+  position: absolute;
+  margin-top: 10px;
+  height: 4px;
+  background: var(--cor-5);
+  transition: .3s;
+  border-radius: 5px;
+}
+#nav ul a.active::after,
+#nav ul a:hover::after{
+  content: '';
+  visibility: visible;
+  display: block;
+  width: 80%;
+  height: 4px;
+
+}
+
+.active {
+  color: var(--cor-5);
+}
+
+
+#nav ul a:hover,
+#nav ul a:focus{
+  color: var(--cor-5);
+}
 #accont {
   gap: 8px;
   display: flex;
@@ -58,6 +97,15 @@
 
 @media(max-width: 900px){
 
+  #nav ul a.active::after,
+  #nav ul a:hover::after{
+    content: '';
+    visibility: hidden;
+    display: none;
+    width: 0%;
+    height: 0px;
+
+  }
   
   #header {
     display: flex;
@@ -66,19 +114,19 @@
     position: relative;
   }
 
-  .active ~ #contaMobile{
+  .activeMenu ~ #contaMobile{
     display: block;
   }
   #header > .menuMobile{
     display: none;
   } 
 
-  .active ~ #accontDisable{
+  .activeMenu ~ #accontDisable{
     display: block;
   }
 
 
-  .active ~ #accontDisableMobile{
+  .activeMenu ~ #accontDisableMobile{
     display: flex;
     gap: 10px;
     position: relative;
@@ -111,21 +159,19 @@
     overflow: hidden;
   }
 
-  .active ~ #logoHeader{
+  .activeMenu ~ #logoHeader{
     display: none;
   }
 
-  .active ~ #contaMobile{
+  .activeMenu ~ #contaMobile{
     display: block;
   }
-
- 
+  
   #accont{
     display: none;
   }
 
   #nav{
-    
     overflow: hidden;
     position: absolute;
     display: block;
@@ -140,10 +186,8 @@
     pointer-events: none;
     border-bottom: 20px solid var(--cor-9);
   }
-  .active ~ #nav {
-    
+  .activeMenu ~ #nav {
     pointer-events: initial;
-
     opacity: 1;
     overflow: visible;
   }
@@ -153,14 +197,11 @@
     display: block;
     background: var(--cor-2);
     width: 100%;
-
   }
   #nav ul a{
     display: block;
     padding: 16px;
     color: var(--cor-8);
-  
-    
   }
 
   /* Menu Mobile */
@@ -189,14 +230,14 @@
     
   }
 
-  #menuMobile.active{
+  #menuMobile.activeMenu{
     border-top-color:transparent;
   }
 
-  #menuMobile.active::after{
+  #menuMobile.activeMenu::after{
     transform: rotate(135deg);
   }
-  #menuMobile.active::before{
+  #menuMobile.activeMenu::before{
     transform: rotate(135deg);
     top: -7px;
   }

@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Head from '../Global/Head';
 
 const Vender = () => {
   return (
-    <div>Vender</div>
-  )
-}
+    <>
+      <Head
+        title="Vender | Imóvel"
+        description="Alugar casa, apartamento ou lote nunca foi tão fácil, tem imóvel ? coloque para vender em poucos cliques "
+      />
 
-export default Vender
+      <section className="container">
+        <div>Vender</div>
+      </section>
+    </>
+  );
+};
+
+export default Vender;
