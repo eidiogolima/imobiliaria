@@ -7,7 +7,6 @@ import AccontImg from '../../assets/icons-main/accontimg.svg';
 const Header = () => {
   React.useEffect(() => {
     const btn = document.querySelector('.menuMobile');
-    console.log(btn);
     const links = document.querySelectorAll('a');
 
     links.forEach((link) => {
@@ -24,7 +23,7 @@ const Header = () => {
         link.classList.add(styles.active);
       });
 
-      console.log(link);
+
     });
   });
 
@@ -48,7 +47,7 @@ const Header = () => {
         <Link to="conta" id={styles.contaMobile}>
           <img src={AccontImg} alt="" />
         </Link>
-        <Link to="home" id={styles.logoHeader}>
+        <Link to="/" id={styles.logoHeader}>
           <h1>LOGO</h1>
         </Link>
 

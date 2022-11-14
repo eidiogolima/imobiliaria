@@ -112,6 +112,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     position: relative;
+    z-index: 1000;
   }
 
   .activeMenu ~ #contaMobile{
