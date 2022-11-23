@@ -1,0 +1,23 @@
+#homeBg {
+  background-image: url('../../assets/img/house-home.jpg');
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 25.25rem;
+  display: flex;
+
+}
+
+
+#home {
+  margin-top: 19rem;
+}
+
+@media (max-width:600px){
+  #homeBg {
+    height: 20rem;
+  }
+  #home {
+    margin-top: 10rem;
+  }
+}
