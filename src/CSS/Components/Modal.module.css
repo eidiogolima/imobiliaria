@@ -219,7 +219,7 @@
   .searchBuy{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap:10px;
+    gap:0px;
     align-items: center;
     position: relative;
   
@@ -278,12 +278,19 @@
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 405px) {
 
-  .modal {
-    width: 270px;
+  .searchBuy{
+    gap: 0px !important;
   }
- 
+  .modal {
+    width: 75vw;
+    justify-content: center;
+  }
+
+  #modal {
+    width: 40vw;
+  }
 
 }
 
@@ -291,5 +298,29 @@
   .search {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media(max-width:346px){
+  .modal {
+    display: block;
+
+  }
+}
+
+@media(max-width:320px) {
+  .modal {
+    width: 60vw;
+
+  }
+  .searchBuy {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  .searchBuy button {
+    margin-top: 10px;
+    padding: 0;
+  
   }
 }

@@ -110,6 +110,7 @@ const Modal = () => {
 
           {filter ? (
             <nav id={styles.nav}>
+              {width < 800 ? <button className="button-s" onClick={()=> setFilter(!filter)}>x</button> : ''}
               <h3>Filtros</h3>
               <form onSubmit={handleSubmit} id={styles.modal}>
                 <div className={styles.cardModal}>
@@ -214,7 +215,8 @@ const Modal = () => {
                     R$ 500mil a 1mi
                   </label>
                 </div>
-                <button className="button-s">Aplicar</button>
+                <button className="button-s" onClick={()=> setFilter(!filter)}>Aplicar</button>
+                
               </form>
             </nav>
           ) : (
