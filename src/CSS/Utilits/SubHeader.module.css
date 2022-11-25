@@ -1,0 +1,17 @@
+.subHeader h1 {
+  /* background: var(--cor-p4); */
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  border: 1px solid var(--cor-11);
+  left: 0;
+}
+
+
+.subHeader p {
+  text-align: center;
+
+
+}
+
+
