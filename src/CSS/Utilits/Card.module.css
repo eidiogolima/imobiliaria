@@ -1,0 +1,90 @@
+#card {
+  max-width: 440px;
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+#card a {
+  display: flex;
+}
+#button {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
+
+#card img {
+  max-width: 440px;
+  width: 100%;
+}
+#card #descriprionList  div  li img {
+  width: 14px;
+}
+
+#card #descriprionList button {
+  background: var(--cor-p1);
+  border: 0;
+  outline: none;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#card #price {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: var(--cor-2);
+  padding: 10px 20px; 
+  border: 1px solid var(--cor-11);
+  border-right: 0;
+  border-radius: 5px 0px  0 5px;
+
+}
+
+#card  #descriprionList {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: start;
+  background:var(--cor-p3) ;
+  padding: 10px;
+  
+}
+#card  #descriprionList  div li {
+  display: flex; 
+  align-items: center;
+  gap: 10px;
+
+}
+@media (max-width: 1145px){ 
+  #card #descriprionList button {
+    display: none;
+  }
+}
+
+
+@media (max-width: 900px) {
+  #card {
+    min-width: 300px;
+    overflow-x: auto;
+  } 
+  #card #descriprionList button {
+    display: none;
+  }
+  #card  #descriprionList {
+    justify-content: center;
+  }
+  a {
+    margin: 0;
+    padding: 0;
+  }
+  #button {
+    display: none;
+ 
+  }
+
+
+}

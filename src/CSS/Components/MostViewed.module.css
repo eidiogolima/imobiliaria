@@ -1,3 +1,22 @@
 #mostViewed {
   margin-bottom: 6.25rem;
+
+
+}
+
+#mostViewed #cards {
+  margin-top: 6.25rem;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+@media (max-width: 900px) {
+  #mostViewed #cards {
+    overflow-x: auto;
+    justify-content: start;
+  }
+
 }
