@@ -12,14 +12,17 @@ const Modal = () => {
   const [filter, setFilter] = React.useState(false);
   const [search, setSearch] = React.useState('');
 
+  
+
   const [width, setWidth] = React.useState('');
 
-  React.useState(() => {
+
     window.addEventListener('resize', () => {
       let valor = window.innerWidth;
       setWidth(valor);
     });
-  }, [width]);
+
+
 
   React.useEffect(() => {
     if (width >= 720) {
