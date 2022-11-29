@@ -13,18 +13,3 @@
   margin-top: 2rem;
 }
 
-@media (max-width:620px) {
-
-  #subHeader {
-    margin-top: 24rem;
-  }
-}
-
-
-
-@media (max-width:320px) {
-
-  #subHeader {
-    margin-top: 30rem;
-  }
-}
