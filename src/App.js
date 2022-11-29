@@ -12,6 +12,7 @@ import Help from './JS/Pages/Help';
 import WhatsApp from './JS/Pages/WhatsApp';
 import Login from './JS/Login/Login';
 import Register from './JS/Register/Register';
+import Footer from './JS/Global/Footer';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
           <Route path = "entrar" element= {<Login/>}/>
           <Route path = "cadastrar" element= {<Register/>}/>
         </Routes>
+      <Footer />
+
       </BrowserRouter>
     </>
   );
