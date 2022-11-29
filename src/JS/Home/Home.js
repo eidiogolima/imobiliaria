@@ -7,6 +7,8 @@ import Foto from '../../assets/img/house-home.jpg';
 import Notices from '../Components/Notices';
 import MostViewed from '../Components/MostViewed';
 
+
+
 function Home() {
   return (
     <>
@@ -14,6 +16,8 @@ function Home() {
         title="Home | Imóvel"
         description="Alugar casa, apartamento ou lote nunca foi tão fácil, tem imóvel ? coloque para vender em poucos cliques "
       />
+
+
 
       <section id={styles.home}>
         <div className={styles.foto}>

@@ -14,6 +14,8 @@ function Footer() {
             <h1 className='font-1-x cor-2'>LOGO</h1>
         </div>
 
+        
+
 
         <ul className= {styles.listItem}>
           <h4 className='font-1-s cor-3'>Fale com a gente</h4>

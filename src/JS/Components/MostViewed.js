@@ -16,9 +16,9 @@ function MostViewed() {
 
       <div className='container' id = {styles.cards}>
         <Card price = 'R$ 290mil' image = {HouseFoto} alt = "Casa" sala = '2' quarto = '4' banheiro = '3' cozinha = '1'/>
-        <Card price = 'R$ 290mil' image = {house2} alt = "Casa" sala = '2' quarto = '4' banheiro = '3' cozinha = '1'/>
-        <Card price = 'R$ 290mil' image = {house3} alt = "Casa" sala = '2' quarto = '4' banheiro = '3' cozinha = '1'/>
-
+        <Card price = 'R$ 300mil' image = {house2} alt = "Casa" sala = '2' quarto = '4' banheiro = '3' cozinha = '1'/>
+        <Card price = 'R$ 450mil' image = {house3} alt = "Casa" sala = '2' quarto = '4' banheiro = '3' cozinha = '1'/>
+        
       </div>
 
       
