@@ -13,6 +13,7 @@ import WhatsApp from './JS/Pages/WhatsApp';
 import Login from './JS/Login/Login';
 import Register from './JS/Register/Register';
 import Footer from './JS/Global/Footer';
+import Search from './JS/Pages/Search';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path = "whatsapp" element= {<WhatsApp/>}/>
           <Route path = "entrar" element= {<Login/>}/>
           <Route path = "cadastrar" element= {<Register/>}/>
+          <Route path = "buscar" element= {<Search/>}/>
         </Routes>
       <Footer />
 

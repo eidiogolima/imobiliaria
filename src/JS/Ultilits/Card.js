@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Card = ({ ...props }) => {
   return (
     <div id={styles.card}>
-      <Link>
+      <Link to = '/buscar'>
       <img src={props.image} alt={props.alt} />
       </Link>
       <span className="font-2-s" id={styles.price}>

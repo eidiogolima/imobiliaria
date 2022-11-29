@@ -6,6 +6,7 @@ import Categories from '../Components/Categories';
 import Foto from '../../assets/img/house-home.jpg';
 import Notices from '../Components/Notices';
 import MostViewed from '../Components/MostViewed';
+import SubHeader from '../Ultilits/SubHeader';
 
 
 
@@ -28,6 +29,10 @@ function Home() {
         </div>
         <Categories />
         <Notices />
+        <SubHeader
+        title="Mais vistos"
+        cor="var(--cor-p4)"
+      />
         <MostViewed />
       </section>
     </>
