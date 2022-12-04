@@ -11,6 +11,9 @@ import SubHeader from '../Ultilits/SubHeader';
 
 
 function Home() {
+
+
+
   return (
     <>
       <Head
@@ -33,7 +36,7 @@ function Home() {
         title="Mais vistos"
         cor="var(--cor-p4)"
       />
-        <MostViewed />
+      <MostViewed/>
       </section>
     </>
   );

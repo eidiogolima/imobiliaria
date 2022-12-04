@@ -9,9 +9,15 @@ import buy from '../../assets/icons-main/buy.svg';
 import { Link } from 'react-router-dom';
 
 const Card = ({ ...props }) => {
+
+  const scrollTop = () => {
+    window.scrollTo({top:0, behavior:'smooth'})
+  }
+
+
   return (
     <div id={styles.card}>
-      <Link to = '/buscar'>
+      <Link to = '/buscar' onClick={scrollTop}>
       <img src={props.image} alt={props.alt} />
       </Link>
       <span className="font-2-s" id={styles.price}>
@@ -49,14 +55,14 @@ const Card = ({ ...props }) => {
             <img src={heart} alt="" />
           </button>
 
-          <button>
+          <button >
             <img src={buy} alt="" />
           </button>
         </ul>
       </div>
 
       <div id={styles.button}>
-        <button className="button-s">Ver Imovel</button>
+        <button className="button-s" onClick={scrollTop}>Ver Imovel</button>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import house2 from '../../assets/img/house-2.jpg'
 import house3 from '../../assets/img/house-3.jpg'
 
 function MostViewed() {
+
   return (
     <section id = {styles.mostViewed}>
       
